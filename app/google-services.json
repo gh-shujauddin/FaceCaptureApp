@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252192586914",
+    "project_id": "newfire-cc4dd",
+    "storage_bucket": "newfire-cc4dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252192586914:android:a91cc78b495ff3d6992bfb",
+        "android_client_info": {
+          "package_name": "com.qadri.facecapture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252192586914-3qkai2jvai7t7eqk72uvt49l1dolf5tu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qadri.facecapture",
+            "certificate_hash": "50142d843a625db3db251955a702b560ad8b2392"
+          }
+        },
+        {
+          "client_id": "252192586914-mbs9eb9or1hedsigmn03kbgkbmpqb8b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAUcTIB-DWZICVjg50I5vwYMnEPMPVqJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252192586914-mbs9eb9or1hedsigmn03kbgkbmpqb8b7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
