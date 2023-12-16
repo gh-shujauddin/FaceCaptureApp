@@ -1,3 +1,5 @@
+![GitHub Cards Preview](https://github.com/gh-shujauddin/FaceCaptureApp/assets/73093103/3c8fc48b-b690-497c-a603-4b742f1b2bba)
+
 # FaceCaptureApp
 Crowd detection application which detects the number of faces on live camera.
 Made it using Mlkit library.
