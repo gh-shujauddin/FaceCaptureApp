@@ -44,7 +44,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -75,9 +75,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:20.7.0")
 
     implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.6.0")
-    implementation ("androidx.navigation:navigation-compose:2.5.3")
     implementation ("io.coil-kt:coil-compose:2.2.2")
-    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
 
     //Camera2
     implementation("androidx.camera:camera-camera2:1.2.3")
@@ -89,7 +87,6 @@ dependencies {
 
     //face detection
     implementation("com.google.android.gms:play-services-mlkit-face-detection:17.1.0")
-    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

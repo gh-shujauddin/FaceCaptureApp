@@ -85,11 +85,11 @@ object LoginDestination : NavigationDestination {
 }
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(
     modifier: Modifier = Modifier,
     viewModel: LoginViewModel = hiltViewModel(),
-    onSubmit: () -> Unit,
     onGoogleButtonClick: () -> Unit,
     onRegister: () -> Unit,
     onNavigateUp: () -> Unit,
@@ -431,5 +431,5 @@ fun LoginScreen(
 @Preview(showBackground = true)
 @Composable
 fun LoginScreenPreview() {
-    LoginScreen(onSubmit = {}, onRegister = {}, onNavigateUp = {}, onGoogleButtonClick = {})
+    LoginScreen(onRegister = {}, onNavigateUp = {}, onGoogleButtonClick = {})
 }

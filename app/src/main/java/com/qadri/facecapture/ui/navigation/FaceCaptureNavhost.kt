@@ -17,8 +17,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.google.android.gms.auth.api.identity.Identity
-import com.qadri.facecapture.ui.apiscreen.ApiScreen
-import com.qadri.facecapture.ui.apiscreen.ApiScreenDestination
 import com.qadri.facecapture.ui.homescreen.HomeScreen
 import com.qadri.facecapture.ui.homescreen.HomeScreenDestination
 import com.qadri.facecapture.ui.login.GoogleAuthUiClient
@@ -93,7 +91,6 @@ fun FaceCaptureNavHost(
             }
             LoginScreen(
                 viewModel = viewModel,
-                onSubmit = { navController.navigate(ApiScreenDestination.route) },
                 onRegister = { navController.navigate(RegisterDestination.route) },
                 onGoogleButtonClick = {
                     scope.launch {
@@ -144,7 +141,6 @@ fun FaceCaptureNavHost(
                 }
             }
             RegisterScreen(
-                onSubmit = { /*TODO*/ },
                 onNavigateUp = { navController.navigateUp() },
                 onLogin = { navController.navigate(LoginDestination.route) },
                 onGoogleSignInButtonClicked = {
@@ -160,9 +156,6 @@ fun FaceCaptureNavHost(
                 }
             )
         }
-        composable(ApiScreenDestination.route) {
-            ApiScreen(navigateBack = { navController.navigateUp() })
-        }
         composable(ProfileDestination.route) {
             ProfileScreen(
                 userData = googleAuthUiClient.getSignedInUser(),
@@ -175,10 +168,5 @@ fun FaceCaptureNavHost(
                 }
             )
         }
-//        composable(ScanQRDestination.route) {
-//            ScanQrScreen(
-//                onNavigateUp = { navController.navigateUp() }
-//            )
-//        }
     }
 }

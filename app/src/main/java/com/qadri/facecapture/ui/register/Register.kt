@@ -87,7 +87,6 @@ object RegisterDestination : NavigationDestination {
 fun RegisterScreen(
     modifier: Modifier = Modifier,
     viewModel: RegisterViewModel = hiltViewModel(),
-    onSubmit: () -> Unit,
     onGoogleSignInButtonClicked: () -> Unit,
     onLogin: () -> Unit,
     onNavigateUp: () -> Unit,
@@ -104,11 +103,6 @@ fun RegisterScreen(
 
 
     val onFacebookSignInButtonClicked: () -> Unit = {}
-    val onSignUpButtonClicked: () -> Unit = {}
-    val onForgortPasswordButtonClicked: () -> Unit = {}
-    val onSignInButtonClicked: (String, String) -> Unit = { email, password ->
-        Log.i("LoginScreen", "Email: $email, Password: $password")
-    }
 
     Scaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
